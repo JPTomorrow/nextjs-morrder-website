@@ -38,26 +38,20 @@ const getTxtVariant = (
   };
 };
 
-const generateTimings = (s: string, delay: number): number[] => {
-  const timings = [];
-  const letters = s.split("");
-  const letterDelayIncrement = delay / (letters.length / 2);
-  let currentDelay = delay;
-  let decend = true;
-  for (const i in letters) {
-    if (currentDelay <= 0.0) decend = false;
-    if (decend) {
-      // decending
-      currentDelay -= letterDelayIncrement;
-      if (currentDelay < 0.0) timings.push(0.0);
-      else timings.push(currentDelay);
+const generateTimings = (word: string, delay: number): number[] => {
+  const timings: number[] = [];
+  const letters = word.split("");
+  const halfWordSize = letters.length / 2;
+  const letterDelayIncrement = delay / halfWordSize;
+  letters.map((letter, i) => {
+    if (i < halfWordSize) {
+      const currDelay = letterDelayIncrement * (letters.length - i + 1);
+      timings.push(currDelay);
     } else {
-      // ascending
-      currentDelay += letterDelayIncrement;
-      if (currentDelay < 0.0) timings.push(0.0);
-      else timings.push(currentDelay);
+      const currDelay = letterDelayIncrement * (i + 1);
+      timings.push(currDelay);
     }
-  }
+  });
   return timings;
 };
 

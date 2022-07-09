@@ -1,7 +1,7 @@
 // src/pages/_app.tsx
 import { withTRPC } from "@trpc/next";
 import type { AppRouter } from "../server/router";
-import type { AppType } from "next/dist/shared/lib/utils";
+import type { AppType, NextWebVitalsMetric } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
 import "../styles/globals.css";
 
@@ -18,6 +18,10 @@ const getBaseUrl = () => {
 
   return `http://localhost:${process.env.PORT ?? 3000}`; // dev SSR should use localhost
 };
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  // console.log(metric);
+}
 
 export default withTRPC<AppRouter>({
   config({ ctx }) {

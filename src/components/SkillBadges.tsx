@@ -62,6 +62,27 @@ const getSkillBadges = (start: number, end: number) => {
     });
 };
 
+const SkillBadge = ({
+  icon,
+  iconText,
+}: {
+  icon: JSX.Element;
+  iconText: string;
+}) => {
+  return (
+    <motion.div
+      animate="spin_gradient"
+      variants={badge}
+      className="skill-badge-border"
+    >
+      <div className="skill-badge">
+        <div className="flex justify-center">{icon}</div>
+        <p className="text-white text-center">{iconText}</p>
+      </div>
+    </motion.div>
+  );
+};
+
 function SkillBadges(props: any) {
   return (
     <>
@@ -92,26 +113,5 @@ function SkillBadges(props: any) {
     </>
   );
 }
-
-const SkillBadge = ({
-  icon,
-  iconText,
-}: {
-  icon: JSX.Element;
-  iconText: string;
-}) => {
-  return (
-    <motion.div
-      animate="spin_gradient"
-      variants={badge}
-      className="skill-badge-border"
-    >
-      <div className="skill-badge">
-        <div className="flex justify-center">{icon}</div>
-        <p className="text-white text-center">{iconText}</p>
-      </div>
-    </motion.div>
-  );
-};
 
 export default SkillBadges;

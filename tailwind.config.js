@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "homepage-bg-1": 'url("/homepage-bg-1.jpg")',
+        "homepage-bg-1": 'url("/homepage-bg-2.jpg")',
       },
       colors: {
         transparent: "transparent",
