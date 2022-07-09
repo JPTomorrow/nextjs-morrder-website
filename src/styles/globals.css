@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .default-header {
+    @apply text-2xl underline;
+  }
+
+  .nav {
+    @apply flex justify-end top-0 left-0 fixed z-[999] px-10 py-5 h-auto w-screen;
+  }
+
+  .nav-link {
+    @apply flex items-center justify-center h-12 w-12 
+    bg-transparent hover:bg-white dark:bg-transparent 
+    text-white hover:text-gray-900 hover:bg-opacity-40 
+    hover:rounded-xl rounded-3xl border-[1px]
+    transition-all duration-300 ease-linear
+    cursor-pointer shadow-lg mr-5;
+  }
+
+  .nav-link-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max top-[68px] 
+    rounded-md shadow-md text-white bg-transparent border-[1px] 
+    text-xs font-bold transition-all duration-200 scale-0 origin-center;
+  }
+
+  .space-bg {
+    @apply bg-homepage-bg-1 bg-top bg-no-repeat bg-cover 
+    h-[calc(100vh+80px)] w-full drop-shadow-xl border-b-2 border-b-gray-800;
+  }
+
+  .homepage-banner {
+    @apply flex flex-col justify-center place-items-center h-screen;
+  }
+
+  .banner-name-text {
+    @apply inline-block text-white text-center text-5xl font-light;
+  }
+
+  .banner-quote-text {
+    @apply text-white text-center text-xl font-light w-[50%];
+  }
+
+  .news-entry {
+    @apply bg-gray-800 bg-opacity-60 blur-[20%] p-5 border-t-[1px];
+  }
+
+  .mission-statement {
+    @apply flex mx-auto text-center my-[75px] text-white w-[350px];
+  }
+
+  .skill-badges {
+    @apply flex mx-auto mt-3 items-center justify-center place-items-center gap-2;
+  }
+
+  .skill-badge-border {
+    @apply rounded-2xl w-[75px];
+  }
+
+  .skill-badge {
+    @apply bg-gray-800 m-[2px] text-white pl-2 pr-2 pt-1 pb-1 rounded-2xl;
+  }
+
+  .contact-input {
+    @apply w-[400px] mx-auto py-[5px] px-[10px] text-white bg-transparent border-[1px] rounded-md;
+  }
+
+  .project-container {
+    @apply w-[90%] bg-gray-700 rounded-sm opacity-70 backdrop-blur-sm 
+    text-left p-5 text-white border-l-[1px] border-r-[1px] hover:border-l-[5px] 
+    hover:border-r-[5px] transition-all duration-300 hover:scale-[1.04] hover:border-double hover:border-t-[1px] hover:border-b-[1px];
+  }
+
+  .custom-button {
+    @apply relative m-[0px] mt-[10px] p-[0px] border-[1px] border-[#007fa2] rounded-[1px] text-[12pt];
+  }
+}
