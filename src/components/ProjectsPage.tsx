@@ -73,11 +73,11 @@ const Projects = () => {
   return (
     <>
       <StarHeader className="pt-20">Professional Projects</StarHeader>
-      <div className="flex flex-col items-center gap-2 mt-[75px] mb-[100px]">
+      <div className="flex flex-col items-center mt-[75px] mb-[100px]">
         {Object.values(proffesionalProjects).map((project, i: number) => (
           <Project
             key={i}
-            className=""
+            className="mt-5"
             title={project["title"]}
             subTitle={project["subTitle"]}
             skillsUsed={project["skillsUsed"]}

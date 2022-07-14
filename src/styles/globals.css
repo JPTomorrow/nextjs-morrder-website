@@ -77,9 +77,10 @@
   }
 
   .project-container {
-    @apply w-[90%] bg-gray-700 rounded-sm opacity-70 backdrop-blur-sm 
+    @apply w-[90%] bg-gray-700 opacity-70 backdrop-blur-sm 
     text-left p-5 text-white border-l-[1px] border-r-[1px] hover:border-l-[5px] 
-    hover:border-r-[5px] transition-all duration-300 hover:scale-[1.04] hover:border-double hover:border-t-[1px] hover:border-b-[1px];
+    hover:border-r-[5px] transition-all duration-150 hover:scale-[1.04] hover:border-double hover:border-t-[1px] hover:border-b-[1px]
+    shadow-xl;
   }
 
   .custom-button {
