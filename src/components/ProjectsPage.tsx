@@ -25,7 +25,7 @@ const proffesionalProjects: ProjectData[] = [
     ],
     image: "/llamachat.png",
     githubLink:
-      "https://github.com/JPTomorrow/revit-bill-of-materials-generator",
+      "https://github.com/JPThttps://github.com/JPTomorrow/nextjs-pusher-railway-chat-app",
     siteLink: "https://justins-chat-app.up.railway.app/",
   },
   {
