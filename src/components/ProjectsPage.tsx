@@ -2,8 +2,33 @@ import StarHeader from "../components/StarHeader";
 import RoundedSeparator from "../components/RoundedSeparator";
 import Project from "./Project";
 
-const proffesionalProjects = {
-  bomGenerator: {
+interface ProjectData {
+  title: string;
+  subTitle: string;
+  skillsUsed: string;
+  description: string[];
+  image: string;
+  githubLink: string;
+  siteLink?: string;
+}
+
+const proffesionalProjects: ProjectData[] = [
+  {
+    title: "LLAMA CHAT",
+    subTitle: "Website",
+    skillsUsed: "React, NextJS, tRPC, Pusher, Websockets",
+    description: [
+      "A chat app built on top of websocket technology",
+      "Mimics Discord or Microsoft Teams in functionality",
+      "Has rudimentary user authentication that can be expanded upon",
+      "Messages are encrypted and no session is stored once all parties leave the chat",
+    ],
+    image: "/llamachat.png",
+    githubLink:
+      "https://github.com/JPTomorrow/revit-bill-of-materials-generator",
+    siteLink: "https://justins-chat-app.up.railway.app/",
+  },
+  {
     title: "Bill of Materials Generator",
     subTitle: "WPF Application",
     skillsUsed: "C#, WPF",
@@ -16,7 +41,7 @@ const proffesionalProjects = {
     githubLink:
       "https://github.com/JPTomorrow/revit-bill-of-materials-generator",
   },
-  marathonTrainingVideos: {
+  {
     title: "Marathon Training Videos",
     subTitle: "Website",
     skillsUsed: "Vue, Microsoft Azure, API's",
@@ -29,7 +54,7 @@ const proffesionalProjects = {
     image: "/marathon-training-videos-pic.png",
     githubLink: "https://github.com/JPTomorrow/marathon-training-videos",
   },
-  bluebeamInWall: {
+  {
     title: "Bluebeam In Wall / Fire Alarm BOM Generator",
     subTitle: "CLI Application",
     skillsUsed: "C#, .NET Core, PDF format parsing",
@@ -42,7 +67,7 @@ const proffesionalProjects = {
     image: "/bluebeam-in-wall-fire-alarm.png",
     githubLink: "https://github.com/JPTomorrow/bluebeam-pthree-in-wall",
   },
-};
+];
 
 const Projects = () => {
   return (
@@ -59,6 +84,7 @@ const Projects = () => {
             description={project["description"]}
             image={project["image"]}
             githubLink={project["githubLink"]}
+            siteLink={project["siteLink"]}
           />
         ))}
       </div>

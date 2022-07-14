@@ -1,4 +1,5 @@
 import { AiFillGithub } from "react-icons/ai";
+import { BsLink45Deg } from "react-icons/bs";
 import { FaYenSign } from "react-icons/fa";
 
 const animContainers = () => {
@@ -13,6 +14,7 @@ function Project({
   description,
   image,
   githubLink,
+  siteLink,
 }: {
   className: string;
   title: string;
@@ -21,6 +23,7 @@ function Project({
   description: string[];
   image: string;
   githubLink: string;
+  siteLink?: string;
 }) {
   const githubButton = githubLink ? (
     <a href={githubLink}>
@@ -28,13 +31,33 @@ function Project({
     </a>
   ) : null;
 
+  const siteButton = siteLink ? (
+    <a href={siteLink}>
+      <BsLink45Deg size={48} />
+    </a>
+  ) : null;
+
+  const linkTitle = siteLink ? (
+    <a
+      href={siteLink}
+      className="hover:text-teal-400 transition-all duration-300"
+    >
+      <h1 className="text-2xl">{title}</h1>
+    </a>
+  ) : (
+    <h1 className="text-2xl">{title}</h1>
+  );
+
   return (
     <>
       <div className={["project-container relative", className].join(" ")}>
-        <h1 className="text-2xl">{title}</h1>
+        {linkTitle}
         <h2 className="text-xl">{subTitle}</h2>
         <h2 className="text-xl">{skillsUsed}</h2>
-        <div className="mt-2">{githubButton}</div>
+        <div className="flex">
+          <div className="mt-2">{githubButton}</div>
+          <div className="mt-2">{siteButton}</div>
+        </div>
 
         <ul className="pl-6 mt-3 list-disc">
           {description.map((bulletPoint: any, i: number) => {
