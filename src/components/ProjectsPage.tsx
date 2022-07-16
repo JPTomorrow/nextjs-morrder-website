@@ -24,8 +24,7 @@ const proffesionalProjects: ProjectData[] = [
       "Messages are encrypted and no session is stored once all parties leave the chat",
     ],
     image: "/llamachat.png",
-    githubLink:
-      "https://github.com/JPThttps://github.com/JPTomorrow/nextjs-pusher-railway-chat-app",
+    githubLink: "https://github.com/JPTomorrow/nextjs-pusher-railway-chat-app",
     siteLink: "https://justins-chat-app.up.railway.app/",
   },
   {
@@ -40,6 +39,18 @@ const proffesionalProjects: ProjectData[] = [
     image: "/bom-generator.png",
     githubLink:
       "https://github.com/JPTomorrow/revit-bill-of-materials-generator",
+  },
+  {
+    title: "Game of Life",
+    subTitle: "Website",
+    skillsUsed: "React, NextJS, three.js, WebGL",
+    description: [
+      "A classic implementation of Conway's Game of Life",
+      "Built using 3D web technologies like three.js",
+    ],
+    image: "/gol.png",
+    githubLink: "https://github.com/JPTomorrow/nextjs-gol",
+    siteLink: "https://nextjs-game-of-life-production.up.railway.app/",
   },
   {
     title: "Marathon Training Videos",
