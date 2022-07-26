@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import React, { useRef, useState } from "react";
 
-import Particles from "react-tsparticles";
-import particleOptions from "../data/tsparticles-bg-config.json";
+// import Particles from "react-tsparticles";
+// import particleOptions from "../data/tsparticles-bg-config.json";
 import { loadFull } from "tsparticles";
 
 import WaveText from "../components/WaveText";
@@ -16,22 +16,22 @@ import Projects from "../components/ProjectsPage";
 import Email from "../components/ContactsPage";
 import Head from "next/head";
 
-const ParticleBg = () => {
-  const particlesInit = async (main: any) => {
-    await loadFull(main);
-  };
+// const ParticleBg = () => {
+//   const particlesInit = async (main: any) => {
+//     await loadFull(main);
+//   };
 
-  const particlesLoaded = (container: any) => {};
+//   const particlesLoaded = (container: any) => {};
 
-  return (
-    <Particles
-      className="absolute top-0 left-0 h-full"
-      options={particleOptions as any}
-      init={particlesInit}
-      loaded={particlesLoaded as any}
-    />
-  );
-};
+//   return (
+//     <Particles
+//       className="absolute top-0 left-0 h-full"
+//       options={particleOptions as any}
+//       init={particlesInit}
+//       loaded={particlesLoaded as any}
+//     />
+//   );
+// };
 
 const quote_lines = [
   "Knowledge must continually be renewed...",
@@ -98,6 +98,7 @@ const Home: NextPage = () => {
             startDelay={2.0}
             startHidden={true}
             className="banner-quote-text mt-5"
+            loop={false}
           >
             {quote_lines[0] as string}
           </WaveText>
@@ -105,6 +106,7 @@ const Home: NextPage = () => {
             startDelay={2.5}
             startHidden={true}
             className="banner-quote-text"
+            loop={false}
           >
             {quote_lines[1] as string}
           </WaveText>
@@ -112,11 +114,12 @@ const Home: NextPage = () => {
             startDelay={3.0}
             startHidden={true}
             className="banner-quote-text"
+            loop={false}
           >
             {quote_lines[2] as string}
           </WaveText>
         </div>
-        <ParticleBg />
+        {/* <ParticleBg /> */}
       </div>
       {/* ABOUT PAGE */}
       <div
