@@ -12,7 +12,7 @@ const barVarients = (itemCount: number, index: number) => {
         duration: 0.5,
         type: "tween",
         ease: "easeInOut",
-        repeat: Infinity,
+        repeat: 1,
         repeatDelay: 1,
       },
     },
@@ -25,7 +25,7 @@ function StarHeader(props: any) {
     for (let i = 0; i < props.children.length; i++) {
       bars.push(
         <motion.div
-          animate="expand"
+          whileInView="expand"
           variants={barVarients(5, i)}
           key={i}
           className="w-[20%] bg-white h-[20px] m-[1px] rounded-b-lg"
