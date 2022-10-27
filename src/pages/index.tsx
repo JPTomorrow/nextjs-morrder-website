@@ -36,7 +36,7 @@ import Head from "next/head";
 const quote_lines = [
   "Knowledge must continually be renewed...",
   "It resembles a statue of marble...",
-  "threatened by the shiftinge sands",
+  "threatened by the shifting sands",
 ];
 
 const Home: NextPage = () => {
