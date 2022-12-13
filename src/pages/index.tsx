@@ -1,9 +1,5 @@
 import type { NextPage } from "next";
-import React, { useRef, useState } from "react";
-
-// import Particles from "react-tsparticles";
-// import particleOptions from "../data/tsparticles-bg-config.json";
-import { loadFull } from "tsparticles";
+import React from "react";
 
 import WaveText from "../components/WaveText";
 import ScrollLink from "../components/ScrollLink";
@@ -15,23 +11,6 @@ import About from "../components/AboutPage";
 import Projects from "../components/ProjectsPage";
 import Email from "../components/ContactsPage";
 import Head from "next/head";
-
-// const ParticleBg = () => {
-//   const particlesInit = async (main: any) => {
-//     await loadFull(main);
-//   };
-
-//   const particlesLoaded = (container: any) => {};
-
-//   return (
-//     <Particles
-//       className="absolute top-0 left-0 h-full"
-//       options={particleOptions as any}
-//       init={particlesInit}
-//       loaded={particlesLoaded as any}
-//     />
-//   );
-// };
 
 const quote_lines = [
   "Knowledge must continually be renewed...",
@@ -50,10 +29,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Justin Morrow Personal Website</title>
-        <meta name="description" content="Justin Morrow Personal Website" />
+        <title>Justin Morrow Portfolio</title>
+        <meta name="description" content="Justin Morrow Portfolio" />
         <link rel="icon" href="/logo.png" />
       </Head>
+
       <div className="nav">
         <ScrollLink
           onClick={() => ScrollToPage(landingRef)}
@@ -119,7 +99,6 @@ const Home: NextPage = () => {
             {quote_lines[2] as string}
           </WaveText>
         </div>
-        {/* <ParticleBg /> */}
       </div>
       {/* ABOUT PAGE */}
       <div
