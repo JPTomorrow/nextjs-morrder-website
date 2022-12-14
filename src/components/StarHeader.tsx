@@ -41,7 +41,7 @@ const StarHeader = ({
         {children}
       </motion.h1>
       <div className="flex justify-center">
-        {Array.from(Array(children!.length), (_, i) => (
+        {Array.from(Array(Math.round(children!.length / 1.5)), (_, i) => (
           <Bar key={i} idx={i} />
         ))}
       </div>
