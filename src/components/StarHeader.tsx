@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-const containerVarients = {};
-
-const barVarients = (itemCount: number, index: number) => {
+const barVarients = (index: number) => {
   return {
     expand: {
       scaleY: [0, 1, 0],
@@ -19,31 +17,36 @@ const barVarients = (itemCount: number, index: number) => {
   };
 };
 
-function StarHeader(props: any) {
-  function makeBars() {
-    let bars = [];
-    for (let i = 0; i < props.children.length; i++) {
-      bars.push(
-        <motion.div
-          whileInView="expand"
-          variants={barVarients(5, i)}
-          key={i}
-          className="w-[20%] bg-white h-[20px] m-[1px] rounded-b-lg"
-        />
-      );
-    }
-    return bars;
-  }
+const Bar = ({ idx }: { idx: number }) => {
   return (
-    <div
-      className={["relative inline-block w-auto", props.className].join(" ")}
-    >
+    <motion.div
+      whileInView="expand"
+      variants={barVarients(idx)}
+      key={idx}
+      className="w-[20%] bg-white h-[20px] m-[1px] rounded-b-lg"
+    />
+  );
+};
+
+const StarHeader = ({
+  children,
+  className,
+}: {
+  children?: React.ReactNode[] | string;
+  className?: string;
+}) => {
+  return (
+    <div className={`relative inline-block w-auto ${className}`}>
       <motion.h1 className="text-white text-3xl text-center border-b-[1px]">
-        {props.children}
+        {children}
       </motion.h1>
-      <div className="flex justify-center">{makeBars()}</div>
+      <div className="flex justify-center">
+        {Array.from(Array(children!.length), (_, i) => (
+          <Bar key={i} idx={i} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default StarHeader;

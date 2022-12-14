@@ -39,20 +39,13 @@ const getTxtVariant = (
 };
 
 const generateTimings = (word: string, delay: number): number[] => {
-  const timings: number[] = [];
   const letters = word.split("");
-  const halfWordSize = letters.length / 2;
-  const letterDelayIncrement = delay / halfWordSize;
-  letters.map((letter, i) => {
-    if (i < halfWordSize) {
-      const currDelay = letterDelayIncrement * (letters.length - i + 1);
-      timings.push(currDelay);
-    } else {
-      const currDelay = letterDelayIncrement * (i + 1);
-      timings.push(currDelay);
-    }
-  });
-  return timings;
+  const halfway = letters.length / 2;
+  const delayInc = delay / halfway;
+
+  return letters.map((_, i) =>
+    i < halfway ? delayInc * (letters.length - i + 1) : delayInc * (i + 1)
+  );
 };
 
 function WaveText({
@@ -71,7 +64,7 @@ function WaveText({
   const waveTimings = generateTimings(children, 0.9);
 
   return (
-    <div id="" className="flex">
+    <div className="flex">
       {children.split("").map((letter, i) => {
         const delay = waveTimings[i] as number;
         return (

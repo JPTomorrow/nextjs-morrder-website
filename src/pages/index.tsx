@@ -31,7 +31,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Justin Morrow Portfolio</title>
         <meta name="description" content="Justin Morrow Portfolio" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.webp" />
       </Head>
 
       <div className="nav">

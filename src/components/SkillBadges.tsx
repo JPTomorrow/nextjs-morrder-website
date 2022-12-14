@@ -83,7 +83,7 @@ const SkillBadge = ({
   );
 };
 
-function SkillBadges(props: any) {
+function SkillBadges() {
   return (
     <>
       <motion.div

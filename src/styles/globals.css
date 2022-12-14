@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply bg-gray-900;
+  }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -77,10 +80,8 @@
   }
 
   .project-container {
-    @apply w-[90%] bg-gray-700 opacity-70 backdrop-blur-sm 
-    text-left p-5 text-white border-l-[1px] border-r-[1px] hover:border-l-[5px] 
-    hover:border-r-[5px] transition-all duration-150 hover:scale-[1.04] hover:border-double hover:border-t-[1px] hover:border-b-[1px]
-    shadow-xl;
+    @apply w-full bg-gray-700 opacity-70 backdrop-blur-sm 
+    text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl;
   }
 
   .custom-button {

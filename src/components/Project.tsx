@@ -1,6 +1,6 @@
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaYenSign } from "react-icons/fa";
+import Image from "next/image";
 
 const animContainers = () => {
   return <div className="absolute"></div>;
@@ -16,7 +16,7 @@ function Project({
   githubLink,
   siteLink,
 }: {
-  className: string;
+  className?: string;
   title: string;
   subTitle: string;
   skillsUsed: string;
@@ -64,10 +64,12 @@ function Project({
             return <li key={i}>{bulletPoint}</li>;
           })}
         </ul>
-        <div className="absolute z-[-10] w-full h-full top-0 left-0 bg-gradient-to-r from-gray-700  via-gray-700 to-transparent" />
+        <div className="absolute z-[-14] rounded-xl bg-gradient-to-t from-gray-700 via-gray-700  to-transparent h-full w-full top-0 right-0 " />
         {image ? (
-          <img
-            className="absolute z-[-15] top-0 right-0 h-full w-[600px]"
+          <Image
+            layout="fill"
+            alt={title}
+            className="absolute z-[-15] top-0 right-0 h-full w-full rounded-xl"
             src={image}
           />
         ) : null}
