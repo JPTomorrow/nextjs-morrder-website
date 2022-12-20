@@ -55,8 +55,8 @@ function Project({
         <h2 className="text-xl">{subTitle}</h2>
         <h2 className="text-xl">{skillsUsed}</h2>
         <div className="flex">
-          <div className="mt-2">{githubButton}</div>
-          <div className="mt-2">{siteButton}</div>
+          <div className="z-[99] mt-2">{githubButton}</div>
+          <div className="z-[99] mt-2">{siteButton}</div>
         </div>
 
         <ul className="pl-6 mt-3 list-disc">
