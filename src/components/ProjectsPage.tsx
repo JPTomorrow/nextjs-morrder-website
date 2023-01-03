@@ -42,6 +42,19 @@ const proffesionalProjects: ProjectData[] = [
       "https://github.com/JPTomorrow/revit-bill-of-materials-generator",
   },
   {
+    title: "WHATS A PNG",
+    subTitle: "PNG Rust Library",
+    skillsUsed:
+      "Rust, Bit Manipulation, Implimentation of the PNG Specification",
+    description: [
+      "Implements the PNG specification in Rust per http://www.libpng.org/pub/png/spec/1.2/PNG-Contents.html",
+      "Reads bytes of a .png file to create structured data out of it for use in other programs",
+    ],
+    image: "",
+    githubLink: "https://github.com/JPTomorrow/whats-a-png",
+    siteLink: "https://crates.io/crates/whats-a-png",
+  },
+  {
     title: "JSON | TOML | YAML converter",
     subTitle: "Website",
     skillsUsed:

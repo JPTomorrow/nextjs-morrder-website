@@ -52,8 +52,8 @@ function Project({
     <>
       <div className={["project-container relative", className].join(" ")}>
         {linkTitle}
-        <h2 className="text-xl">{subTitle}</h2>
-        <h2 className="text-xl">{skillsUsed}</h2>
+        <h2 className="text-lg">{subTitle}</h2>
+        <h2 className="text-lg">{skillsUsed}</h2>
         <div className="flex">
           <div className="z-[99] mt-2">{githubButton}</div>
           <div className="z-[99] mt-2">{siteButton}</div>
