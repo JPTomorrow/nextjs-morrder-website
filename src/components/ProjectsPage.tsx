@@ -110,7 +110,7 @@ const Projects = () => {
   return (
     <>
       <StarHeader className="pt-20">Professional Projects</StarHeader>
-      <div className="grid grid-cols-2 gap-5 overflow-auto mx-[50px] p-5 h-[550px] mt-[75px] mb-[100px]">
+      <div className="grid grid-cols-2 gap-5 mx-[50px] p-5 mt-[75px] mb-[100px]">
         {Object.values(proffesionalProjects).map((project, i: number) => (
           <Project
             key={i}
@@ -124,7 +124,7 @@ const Projects = () => {
           />
         ))}
       </div>
-      <RoundedSeparator className="fill-gray-800" />
+      <RoundedSeparator className="fill-purple2" />
     </>
   );
 };
