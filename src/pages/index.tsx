@@ -102,7 +102,7 @@ const Home: NextPage = () => {
       </div>
       {/* ABOUT PAGE */}
       <div
-        className="relative text-center bg-gray-900 pb-10 h-full"
+        className="relative text-center bg-purple1 pb-10 h-full"
         ref={newsRef}
       >
         <About />
@@ -110,14 +110,14 @@ const Home: NextPage = () => {
       {/* PROJECTS PAGE */}
       <div
         ref={projectsRef}
-        className="relative text-center bg-gray-800 pb-10 h-full border-t-2"
+        className="relative text-center bg-purple2 pb-10 h-full border-t-2"
       >
         <Projects />
       </div>
       {/* CONTACT PAGE */}
       <div
         ref={contactRef}
-        className="relative text-center bg-gray-900 pb-10 h-full border-t-2"
+        className="relative text-center bg-purple1 pb-10 h-full border-t-2"
       >
         <Email />
       </div>

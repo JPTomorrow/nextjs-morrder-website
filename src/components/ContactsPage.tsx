@@ -49,7 +49,7 @@ const Email = () => {
         />
         <div className="mt-[5px] w-[400px] mx-auto">
           <button
-            className="float-left border-[1px] border-teal-500  bg-teal-500 bg-opacity-30 rounded-md px-4 text-white mt-2 hover:bg-teal-800 transition-all duration-75"
+            className="custom-button float-left rounded-md px-4 py-2 text-white mt-2 hover:bg-purple2 transition-all duration-75"
             onClick={() => sendMail()}
           >
             Submit
@@ -57,7 +57,7 @@ const Email = () => {
         </div>
       </div>
 
-      <RoundedSeparator className="fill-gray-900" />
+      <RoundedSeparator className="fill-purple1" />
     </>
   );
 };

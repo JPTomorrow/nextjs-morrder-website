@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         transparent: "transparent",
         gray: colors.stone,
+        purple1: "#430b70",
+        purple2: "#580899",
         white: "ghostwhite",
       },
     },

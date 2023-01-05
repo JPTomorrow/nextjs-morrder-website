@@ -17,7 +17,7 @@ const About = () => {
       <div className="my-[75px]">
         <SkillBadges />
       </div>
-      <RoundedSeparator className="fill-gray-900" />
+      <RoundedSeparator className="fill-purple1" />
     </>
   );
 };

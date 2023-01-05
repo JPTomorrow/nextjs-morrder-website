@@ -4,7 +4,7 @@
 
 @layer components {
   html {
-    @apply bg-gray-900;
+    @apply bg-purple1;
   }
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -40,7 +40,7 @@
 
   .space-bg {
     @apply bg-homepage-bg-1 bg-top bg-no-repeat bg-cover 
-    h-[calc(100vh+80px)] w-full drop-shadow-xl border-b-2 border-b-gray-800;
+    h-[calc(100vh+80px)] w-full drop-shadow-xl border-b-2 border-b-purple1;
   }
 
   .homepage-banner {
@@ -81,10 +81,10 @@
 
   .project-container {
     @apply w-full bg-gray-700 opacity-70 backdrop-blur-sm 
-    text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl;
+    text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl border-[1px] border-white;
   }
 
   .custom-button {
-    @apply relative m-[0px] mt-[10px] p-[0px] border-[1px] border-[#007fa2] rounded-[1px] text-[12pt];
+    @apply relative m-[0px] mt-[10px] p-[0px] border-[1px] border-purple-400 rounded-[1px] text-[12pt];
   }
 }
