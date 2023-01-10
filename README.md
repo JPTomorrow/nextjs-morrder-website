@@ -2,6 +2,8 @@
 
 ## Roadmap / TODO:
 
+- contact page redesign
+- about page blurb rewrite and make it link to proposed blog
 - review email sending API endpoint
 - look into adding a blog section using PlanetScale
 
