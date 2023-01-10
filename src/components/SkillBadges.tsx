@@ -89,6 +89,7 @@ function SkillBadges() {
       <motion.div
         initial={{ scale: 0 }}
         whileInView="show"
+        viewport={{ once: true }}
         variants={container}
         className="skill-badges grid-cols-3"
       >
@@ -97,6 +98,7 @@ function SkillBadges() {
       <motion.div
         initial={{ scale: 0 }}
         whileInView="show"
+        viewport={{ once: true }}
         variants={container}
         className="skill-badges grid-cols-4"
       >
@@ -105,6 +107,7 @@ function SkillBadges() {
       <motion.div
         initial={{ scale: 0 }}
         whileInView="show"
+        viewport={{ once: true }}
         variants={container}
         className="skill-badges grid-cols-4"
       >

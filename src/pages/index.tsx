@@ -57,7 +57,7 @@ const Home: NextPage = () => {
           tooltip="Contact Me"
         />
       </div>
-      <div className="space-bg rounded-divider" ref={landingRef}>
+      <div className="space-bg rounded-divider z-[4] relative" ref={landingRef}>
         <div className="homepage-banner">
           <ProfilePicture />
           <WaveText
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
       </div>
       {/* ABOUT PAGE */}
       <div
-        className="rounded-divider rounded-div-offset relative z-[-8] text-center bg-purple1 pb-10 h-full"
+        className="rounded-divider rounded-div-offset relative z-[3] text-center bg-purple1 pb-10 h-full"
         ref={newsRef}
       >
         <About />
@@ -112,14 +112,14 @@ const Home: NextPage = () => {
       {/* PROJECTS PAGE */}
       <div
         ref={projectsRef}
-        className="rounded-divider rounded-div-offset relative z-[-9] text-center bg-purple2 pb-10 h-full"
+        className="rounded-divider rounded-div-offset relative z-[2] text-center bg-purple2 pb-10 h-full"
       >
         <Projects />
       </div>
       {/* CONTACT PAGE */}
       <div
         ref={contactRef}
-        className="rounded-div-offset relative z-[-10] text-center bg-purple1 pb-10 h-full"
+        className="rounded-div-offset relative z-[1] text-center bg-purple1 pb-10 h-full"
       >
         <Email />
       </div>

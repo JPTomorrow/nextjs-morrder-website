@@ -15,6 +15,14 @@
     scrollbar-width: none; /* Firefox */
   }
 
+  .std-comp-margin {
+    @apply my-[4rem];
+  }
+
+  .std-hdr-t-pad {
+    @apply pt-[8rem];
+  }
+
   .default-header {
     @apply text-2xl underline;
   }
@@ -72,12 +80,23 @@
     @apply bg-gray-800 bg-opacity-60 blur-[20%] p-5 border-t-[1px];
   }
 
+  .about-container {
+    @apply flex justify-center w-full;
+  }
+
   .mission-statement {
-    @apply flex mx-auto text-center my-[75px] text-white w-[350px];
+    @apply ml-5 text-left text-lg text-white w-[30%];
+  }
+
+  .about-pic {
+    @apply relative rounded-lg w-[400px] aspect-[4/3] border-[5px] border-blue;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
 
   .skill-badges {
-    @apply flex mx-auto mt-3 items-center justify-center place-items-center gap-2;
+    @apply flex mx-auto mt-3 items-center justify-center place-items-center gap-5;
   }
 
   .skill-badge-border {
@@ -93,11 +112,10 @@
   }
 
   .project-container {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
     @apply w-full bg-gray-700 opacity-70 backdrop-blur-sm 
-    text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl border-[1px] border-white;
-  }
-
-  .std-hdr-t-pad {
-    @apply pt-[8rem];
+    text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] rounded-xl;
   }
 }
