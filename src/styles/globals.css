@@ -47,6 +47,10 @@
     border-bottom-right-radius: 90% 40px;
   }
 
+  .rounded-div-offset {
+    margin-top: -40px;
+  }
+
   .space-bg {
     @apply bg-homepage-bg-1 bg-top bg-no-repeat bg-cover 
     h-[calc(100vh+80px)] w-full border-b-2 border-b-purple1;
@@ -91,5 +95,9 @@
   .project-container {
     @apply w-full bg-gray-700 opacity-70 backdrop-blur-sm 
     text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl border-[1px] border-white;
+  }
+
+  .std-hdr-t-pad {
+    @apply pt-[8rem];
   }
 }

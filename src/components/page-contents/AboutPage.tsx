@@ -1,10 +1,10 @@
-import StarHeader from "../components/StarHeader";
-import SkillBadges from "../components/SkillBadges";
+import StarHeader from "@/components/StarHeader";
+import SkillBadges from "@/components/SkillBadges";
 
 const About = () => {
   return (
     <>
-      <StarHeader className="pt-20">About Me</StarHeader>
+      <StarHeader className="std-hdr-t-pad">About Me</StarHeader>
       <div className="mission-statement">
         Software Developer with greater than 4 years of hands-on experience
         designing and integrating software to meet a client&apos;s needs who is

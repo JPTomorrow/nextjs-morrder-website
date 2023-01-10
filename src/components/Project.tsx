@@ -64,7 +64,7 @@ function Project({
             return <li key={i}>{bulletPoint}</li>;
           })}
         </ul>
-        <div className="absolute z-[-14] rounded-xl bg-gradient-to-t from-purple1 via-purple1  to-transparent h-full w-full top-0 right-0 " />
+        <div className="absolute z-[-14] rounded-xl bg-gradient-to-t from-blue via-blue  to-transparent h-full w-full top-0 right-0 " />
         {image ? (
           <Image
             layout="fill"

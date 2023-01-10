@@ -1,5 +1,5 @@
-import StarHeader from "../components/StarHeader";
-import Project from "./Project";
+import StarHeader from "@/components/StarHeader";
+import Project from "@/components/Project";
 
 interface ProjectData {
   title: string;
@@ -108,7 +108,7 @@ const proffesionalProjects: ProjectData[] = [
 const Projects = () => {
   return (
     <>
-      <StarHeader className="pt-20">Professional Projects</StarHeader>
+      <StarHeader className="std-hdr-t-pad">Professional Projects</StarHeader>
       <div className="grid grid-cols-2 gap-5 mx-[50px] p-5 mt-[75px] mb-[100px]">
         {Object.values(proffesionalProjects).map((project, i: number) => (
           <Project

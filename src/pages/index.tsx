@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
 import React from "react";
+import Head from "next/head";
 
-import WaveText from "../components/WaveText";
-import ScrollLink from "../components/ScrollLink";
+import WaveText from "@/components/WaveText";
+import ScrollLink from "@/components/ScrollLink";
+import ProfilePicture from "@/components/ProfilePicture";
+import About from "@/components/page-contents/AboutPage";
+import Projects from "@/components/page-contents/ProjectsPage";
+import Email from "@/components/page-contents/ContactsPage";
 
 import { GoArchive } from "react-icons/go";
 import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
-import About from "../components/AboutPage";
-import Projects from "../components/ProjectsPage";
-import Email from "../components/ContactsPage";
-import Head from "next/head";
-import ProfilePicture from "../components/ProfilePicture";
 
 const quote_lines = [
   "Knowledge must continually be renewed...",
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
       </div>
       {/* ABOUT PAGE */}
       <div
-        className="rounded-divider relative z-[10] text-center bg-purple1 pb-10 h-full"
+        className="rounded-divider rounded-div-offset relative z-[-8] text-center bg-purple1 pb-10 h-full"
         ref={newsRef}
       >
         <About />
@@ -112,14 +112,14 @@ const Home: NextPage = () => {
       {/* PROJECTS PAGE */}
       <div
         ref={projectsRef}
-        className="rounded-divider relative text-center bg-purple2 pb-10 h-full"
+        className="rounded-divider rounded-div-offset relative z-[-9] text-center bg-purple2 pb-10 h-full"
       >
         <Projects />
       </div>
       {/* CONTACT PAGE */}
       <div
         ref={contactRef}
-        className="relative text-center bg-purple1 pb-10 h-full"
+        className="rounded-div-offset relative z-[-10] text-center bg-purple1 pb-10 h-full"
       >
         <Email />
       </div>

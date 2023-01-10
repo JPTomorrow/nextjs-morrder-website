@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { trpc } from "../utils/trpc";
-import StarHeader from "./StarHeader";
+import { trpc } from "@/utils/trpc";
+import StarHeader from "@/components/StarHeader";
 
 const Email = () => {
   const [name, setName] = useState("");
@@ -26,7 +26,7 @@ const Email = () => {
 
   return (
     <>
-      <StarHeader className="pt-20">Contact Me</StarHeader>
+      <StarHeader className="std-hdr-t-pad">Contact Me</StarHeader>
       <div className="flex flex-col mt-[75px]">
         <input
           value={name}
