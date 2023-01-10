@@ -1,6 +1,5 @@
 import StarHeader from "../components/StarHeader";
 import SkillBadges from "../components/SkillBadges";
-import RoundedSeparator from "../components/RoundedSeparator";
 
 const About = () => {
   return (
@@ -17,7 +16,6 @@ const About = () => {
       <div className="my-[75px]">
         <SkillBadges />
       </div>
-      <RoundedSeparator className="fill-purple1" />
     </>
   );
 };
