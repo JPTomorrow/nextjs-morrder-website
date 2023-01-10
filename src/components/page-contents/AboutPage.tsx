@@ -9,7 +9,7 @@ const About = () => {
     <>
       <StarHeader className="std-hdr-t-pad">About Me</StarHeader>
       <div className="about-container std-comp-margin">
-        <p className="mission-statement">
+        <div className="mission-statement">
           <div className="about-pic">
             <Image
               src="/about-pic.webp"
@@ -37,7 +37,7 @@ const About = () => {
           high-quality, efficient, and user-friendly products. His work ethic,
           technical skills, and ability to work collaboratively make him a
           valuable addition to any organization.
-        </p>
+        </div>
       </div>
       <StarHeader>Skills</StarHeader>
       <div className="std-comp-margin">

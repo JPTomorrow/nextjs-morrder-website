@@ -4,7 +4,7 @@
 
 @layer components {
   html {
-    @apply bg-purple1;
+    @apply bg-black;
   }
   .no-scrollbar::-webkit-scrollbar {
     display: none;

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const profileAnimation = {
   initial: {
@@ -14,11 +15,17 @@ const profileAnimation = {
 
 const ProfilePicture = () => {
   return (
-    <motion.div animate="initial" variants={profileAnimation}>
-      <img
+    <motion.div
+      className="border-[1px] w-[150px] h-[150px] border-white mb-3 rounded-full"
+      animate="initial"
+      variants={profileAnimation}
+    >
+      <Image
         src="/profile.webp"
         alt="Profile Picture"
-        className=" mb-3 rounded-full w-[150px] h-[150px] border-[1px] border-white"
+        width={150}
+        height={150}
+        className="rounded-full"
       />
     </motion.div>
   );
