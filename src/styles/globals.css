@@ -19,6 +19,10 @@
     @apply text-2xl underline;
   }
 
+  .custom-button {
+    @apply relative m-[0px] mt-[10px] p-[0px] border-[1px] border-purple-400 rounded-[1px] text-[12pt];
+  }
+
   .nav {
     @apply flex justify-end top-0 left-0 fixed z-[999] px-10 py-5 h-auto w-screen;
   }
@@ -38,9 +42,14 @@
     text-xs font-bold transition-all duration-200 scale-0 origin-center;
   }
 
+  .rounded-divider {
+    border-bottom-left-radius: 90% 40px;
+    border-bottom-right-radius: 90% 40px;
+  }
+
   .space-bg {
     @apply bg-homepage-bg-1 bg-top bg-no-repeat bg-cover 
-    h-[calc(100vh+80px)] w-full drop-shadow-xl border-b-2 border-b-purple1;
+    h-[calc(100vh+80px)] w-full border-b-2 border-b-purple1;
   }
 
   .homepage-banner {
@@ -82,9 +91,5 @@
   .project-container {
     @apply w-full bg-gray-700 opacity-70 backdrop-blur-sm 
     text-left p-5 text-white transition-all duration-150 hover:scale-[1.02] shadow-xl rounded-xl border-[1px] border-white;
-  }
-
-  .custom-button {
-    @apply relative m-[0px] mt-[10px] p-[0px] border-[1px] border-purple-400 rounded-[1px] text-[12pt];
   }
 }

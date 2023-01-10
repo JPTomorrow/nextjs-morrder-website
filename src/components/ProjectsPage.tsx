@@ -1,5 +1,4 @@
 import StarHeader from "../components/StarHeader";
-import RoundedSeparator from "../components/RoundedSeparator";
 import Project from "./Project";
 
 interface ProjectData {
@@ -124,7 +123,6 @@ const Projects = () => {
           />
         ))}
       </div>
-      <RoundedSeparator className="fill-purple2" />
     </>
   );
 };

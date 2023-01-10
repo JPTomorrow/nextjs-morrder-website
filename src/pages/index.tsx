@@ -11,6 +11,7 @@ import About from "../components/AboutPage";
 import Projects from "../components/ProjectsPage";
 import Email from "../components/ContactsPage";
 import Head from "next/head";
+import ProfilePicture from "../components/ProfilePicture";
 
 const quote_lines = [
   "Knowledge must continually be renewed...",
@@ -56,8 +57,9 @@ const Home: NextPage = () => {
           tooltip="Contact Me"
         />
       </div>
-      <div className="space-bg" ref={landingRef}>
+      <div className="space-bg rounded-divider" ref={landingRef}>
         <div className="homepage-banner">
+          <ProfilePicture />
           <WaveText
             startDelay={0.5}
             startHidden={true}
@@ -102,7 +104,7 @@ const Home: NextPage = () => {
       </div>
       {/* ABOUT PAGE */}
       <div
-        className="relative text-center bg-purple1 pb-10 h-full"
+        className="rounded-divider relative z-[10] text-center bg-purple1 pb-10 h-full"
         ref={newsRef}
       >
         <About />
@@ -110,14 +112,14 @@ const Home: NextPage = () => {
       {/* PROJECTS PAGE */}
       <div
         ref={projectsRef}
-        className="relative text-center bg-purple2 pb-10 h-full border-t-2"
+        className="rounded-divider relative text-center bg-purple2 pb-10 h-full"
       >
         <Projects />
       </div>
       {/* CONTACT PAGE */}
       <div
         ref={contactRef}
-        className="relative text-center bg-purple1 pb-10 h-full border-t-2"
+        className="relative text-center bg-purple1 pb-10 h-full"
       >
         <Email />
       </div>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import RoundedSeparator from "./RoundedSeparator";
 import { trpc } from "../utils/trpc";
 import StarHeader from "./StarHeader";
 
@@ -56,8 +55,6 @@ const Email = () => {
           </button>
         </div>
       </div>
-
-      <RoundedSeparator className="fill-purple1" />
     </>
   );
 };
