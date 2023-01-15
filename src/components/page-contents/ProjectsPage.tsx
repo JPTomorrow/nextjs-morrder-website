@@ -92,6 +92,17 @@ const proffesionalProjects: ProjectData[] = [
     githubLink: "https://github.com/JPTomorrow/marathon-training-videos",
   },
   {
+    title: "SecPad",
+    subTitle: "Website",
+    skillsUsed: "React, NextJS, Local Storage",
+    description: [
+      "A note taking app that uses local storage to store the notes",
+    ],
+    image: "/secpad.webp",
+    githubLink: "https://github.com/JPTomorrow/secpad",
+    siteLink: "https://todo-app-production-6463.up.railway.app/",
+  },
+  {
     title: "Bluebeam In Wall / Fire Alarm BOM Generator",
     subTitle: "CLI Application",
     skillsUsed: "C#, .NET Core, PDF format parsing",
